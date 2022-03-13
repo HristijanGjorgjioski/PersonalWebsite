@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./index.css";
 
-function App() {
+import Navbar from "./components/Navbar/Navbar";
+import Background from "./assets/background.jpg";
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='text-center'>
+      <img alt='background' className='background z-0' src={Background} />
+      <div className='w-10/12 bg-gray-300 z-10 rounded-full'>
+        <Navbar />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
