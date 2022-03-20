@@ -8,13 +8,13 @@ const Navbar: React.FC = () => {
   return (
     <div className='navbar'>
       <div className='navbar__logo'>
-        <h4>gjorgjioski</h4>
+        <a href='/'>gjorgjioski</a>
       </div>
 
       <div className='navbar__lis'>
-        <h4 className='navbar__lis-li'>About</h4>
-        <h4 className='navbar__lis-li'>Blog</h4>
-        <h4 className='navbar__lis-li'>Projects</h4>
+        <a href='/projects'>Projects</a>
+        <a href='/blog'>Blog</a>
+        <a href='/about'>About</a>
       </div>
     </div>
   );
