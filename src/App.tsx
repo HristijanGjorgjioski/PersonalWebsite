@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.sass";
+import "./App.styles.sass";
 import Navbar from "./components/Navbar/Navbar";
 
 const App: React.FC = () => {
