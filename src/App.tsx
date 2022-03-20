@@ -1,13 +1,13 @@
 import React from "react";
-import "./App.styles.sass";
+
 import Navbar from "./components/Navbar/Navbar";
+
+import "./App.styles.sass";
 
 const App: React.FC = () => {
   return (
     <div className='main-container'>
-      <div className='w-10/12 bg-gray-300 z-10 rounded-full'>
-        <Navbar />
-      </div>
+      <Navbar />
     </div>
   );
 };
