@@ -8,7 +8,7 @@
         font-weight: 400
         font-size: 2rem
 
-.hero-personal__info 
+.hero-personal__info
     @include flexCenter(row)
     gap: 1rem
 
@@ -19,3 +19,8 @@
 .hero-personal__info-email 
     font-weight: 500
     color: red
+
+
+@media (min-width: 640px)
+    .hero-personal__info
+        flex-direction: column
