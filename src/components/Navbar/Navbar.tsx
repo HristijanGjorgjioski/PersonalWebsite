@@ -1,20 +1,21 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./Navbar.styles.sass";
 
 const Navbar: React.FC = () => {
-  // const [isMobileOpen, setIsMobileOpen] = useState<boolean>(false);
+  const navigate = useNavigate();
 
   return (
     <div className='navbar'>
       <div className='navbar__logo'>
-        <a href='/'>gjorgjioski</a>
+        <h4 onClick={() => navigate("/")}>gjorgjioski</h4>
       </div>
 
       <div className='navbar__lis'>
-        <a href='/projects'>Projects</a>
-        <a href='/blog'>Blog</a>
-        <a href='/about'>About</a>
+        <h4 onClick={() => navigate("/projects")}>Projects</h4>
+        <h4 onClick={() => navigate("/blog")}>Blog</h4>
+        <h4 onClick={() => navigate("/about")}>About</h4>
       </div>
     </div>
   );
