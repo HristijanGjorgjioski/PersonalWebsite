@@ -5,7 +5,7 @@ import './Hero.styles.sass'
 const Hero: React.FC = () => {
   return (
     <div className='hero'>
-        <h4 className='hero-title'>Personal website of Hristijan Gjorgjioski</h4>
+        <h4 className='hero-title'>Personal website of <span>Hristijan Gjorgjioski</span></h4>
         <div className='hero-personal__info'>
             <span className='hero-personal__info-location'>Prilep, Macedonia</span>
             <span className='hero-personal__info-email'>hristijangorgioski503@gmail.com</span>

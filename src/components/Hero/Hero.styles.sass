@@ -7,6 +7,9 @@
     h4
         font-weight: 400
         font-size: 2rem
+        span 
+            color: red
+            font-weight: 500
 
 .hero-personal__info
     @include flexCenter(row)
@@ -21,6 +24,15 @@
     color: red
 
 
-@media (min-width: 640px)
+@media (max-width: $mobileBreakPoint)
     .hero-personal__info
+        align-items: center
         flex-direction: column
+    .hero
+        h4 
+            font-size: 1.3rem
+
+@media (max-width: $tabletBreakPoint)
+    .hero
+        h4
+            font-size: 1.5rem
